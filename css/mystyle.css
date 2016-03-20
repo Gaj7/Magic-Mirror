@@ -1,0 +1,93 @@
+body {
+	background-color: #000;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: helvetica-light, Arial;
+	letter-spacing: 0px;
+	line-height: 60%;
+	color: #fff;
+	font-size: 96px;
+	
+	-webkit-animation: fadein 4s;
+	-moz-animation: fadein 4s;
+	-ms-animation: fadein 4s;
+}
+
+/*
+table, th, td {
+	border: 1px solid white;
+}
+
+div {
+	border: 1px solid green;
+}
+*/
+
+.layout {
+	width: 100%;
+	vertical-align: top;
+	border-spacing: 24px 0;
+	font-size: 96px;
+	font-family: helvetica-light, Arial;
+}
+
+.left {
+	width: 100%;
+	text-align: left;
+}
+
+#date{
+	position: relative;
+	top: -38px;
+}
+
+.right {
+	width: 100%;
+	text-align: right;
+}
+
+.bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 48px;
+	text-align: center;
+}
+
+.forecastTable {
+	position: relative;
+	right: -48px;
+	text-align: right;
+	border-spacing: 48px 0;
+	font-size: 48px;
+}
+
+.transparent{
+	opacity: 0.5;
+}
+
+
+@font-face{
+	font-family: helvetica-light;
+	src: url(../font/HelveticaNeue-Light.ttf);
+}
+
+@-webkit-keyframes fadein
+{
+	from {opacity:0;}
+	to{opacity:1;}
+}
+
+@-ms-keyframes fadein
+{
+	from {opacity:0;}
+	to{opacity:1;}
+}
+
+@-moz-keyframes fadein
+{
+	from {opacity:0;}
+	to{opacity:1;}
+}

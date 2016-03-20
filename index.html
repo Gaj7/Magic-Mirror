@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+		<link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+		<title>Magic Mirror</title>
+		
+		<!-- web link to jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		
+		<!-- local stored jquery library, used for api calls in weather.js
+		<script src="js/jquery-2.2.1.js"></script> -->
+		
+		<script src="js/main.js"></script>
+		<script src="js/clock.js"></script>
+		<script src="js/weather.js"></script>
+		<script src="js/message.js"></script>
+	</head>
+	
+	<body onload="start()">
+		
+		<table class="layout">
+			<tr>
+				<td>
+					<div id="clock" class="left"></div>
+				</td>
+				<td>
+					<div id="weather" class="right"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="date" class="left transparent"></div>
+				</td>
+				<td>
+					<div class="right transparent">
+						<table class="forecastTable" align=right>
+							<tr id="forecastRow1"></tr>
+							<tr id="forecastRow2"></tr>
+							<tr id="forecastRow3"></tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		
+		<div class="bottom">
+			<div id="message"></div>
+		</div>
+			
+	</body>
+</html>
